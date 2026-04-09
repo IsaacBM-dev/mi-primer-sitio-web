@@ -1,0 +1,103 @@
+/*
+        Para establecer estilos en una etiqueta/clase/id <- selectores
+        selector{
+            "propiedades":"valor"
+        }
+        */
+body {
+    /*Textos y fuentes */
+    font-family: Arial, Helvetica, sans-serif;
+    /*color: red;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 800;
+            font-style: italic;*/
+}
+
+/* Estilo para clase */
+.inicio {
+    text-align: center;
+    font-style: italic;
+}
+
+header {
+    /*Cambio de color fondo*/
+    background-color: black;
+    /* background: fondo | background-color: cambia color de fondo*/
+    color: white;
+    /*color: cambia el color del texto*/
+    padding: 20px;
+    /* padding: Espacio interno de una etiqueta |
+            padding: global
+            padding: (top-bottom) (left-right)
+            padding: top (left - right) bottom;
+            padding: top right bottom left*/
+    /* ubicaciones del paddding
+                padding-top
+                padding-bottom
+                padding-left
+                padding-right
+            */
+    border: 5px solid gray;
+    /* border: Trabaja con el marco del contenedor/etiqueta  
+            border: grosor tipo color;
+            tipos de bordes:
+            solid - linea continua
+            dashed - linea discontinua
+            dotted - puntos
+            double - 2 lineas
+            inset - sombra top
+            outset - sombra bottom
+            none - sin estilos
+            */
+    border-radius: 40px;
+    /* border-radius: Trabaja con el marco doblando las esquinas*/
+
+    margin: 20px;
+    /* margin: espacio existente fuera de la etiqueta*/
+    /*
+            margin: global
+            margin: (top-bottom) (left-right)
+            margin: top (left - right) bottom;
+            padding: top right bottom left
+
+            ubicaciones del paddding
+                margin-top
+                margin-bottom
+                margin-left
+                margin-right
+            */
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+}
+
+/* Estilo para id */
+#Habilidades {
+    text-align: center;
+}
+.main-contenido{
+    margin: 30px;
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+}
+
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap; /* permitir que los elementos bajen a otra fila*/
+    gap:20px;
+    justify-content: space-around;
+}
+
+.footer{
+    margin-top: 60px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
