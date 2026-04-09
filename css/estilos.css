@@ -16,15 +16,17 @@ body {
 
 /* Estilo para clase */
 .inicio {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     font-style: italic;
+    color: rgb(134, 97, 1);
 }
 
 header {
     /*Cambio de color fondo*/
-    background-color: black;
+    background-color: rgb(12, 130, 130);
     /* background: fondo | background-color: cambia color de fondo*/
-    color: white;
+    color: rgb(210, 132, 5);
     /*color: cambia el color del texto*/
     padding: 20px;
     /* padding: Espacio interno de una etiqueta |
@@ -38,7 +40,7 @@ header {
                 padding-left
                 padding-right
             */
-    border: 5px solid gray;
+    border: 5px solid rgb(105, 240, 199);
     /* border: Trabaja con el marco del contenedor/etiqueta  
             border: grosor tipo color;
             tipos de bordes:
@@ -50,7 +52,7 @@ header {
             outset - sombra bottom
             none - sin estilos
             */
-    border-radius: 40px;
+    border-radius: 30px;
     /* border-radius: Trabaja con el marco doblando las esquinas*/
 
     margin: 20px;
@@ -68,12 +70,13 @@ header {
                 margin-right
             */
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header nav a {
-    color: #fff;
+    color: #ddff00;
     text-decoration: none;
-    margin: 20px;
+    margin: 30px;
 }
 
 /* Estilo para id */
@@ -83,8 +86,9 @@ header nav a {
 .main-contenido{
     margin: 30px;
     text-align: center;
-    background-color: gray;
+    background-color: rgb(232, 231, 151);
     padding: 20px;
+    border-radius: 40px;
 }
 
 .contenedor-cards{
@@ -95,9 +99,9 @@ header nav a {
 }
 
 .footer{
-    margin-top: 60px;
+    margin-top: 55px;
     text-align: center;
-    background-color: black;
-    color: #fff;
-    padding: 20px;
+    background-color: #E2E3D9;
+    color: black;
+    padding: 10px;
 }
