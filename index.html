@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Mi web</title>
+    <style>
+        /* Agregamos desplazamiento suave para los anclajes */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,12 +19,11 @@
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#contenido">Contenido</a>
-            <a href="#infornmacion">Información</a>
+            <a href="#informacion">Información</a> 
         </nav>
     </header>
     <main>
-        <!-- Inicio -->
-        <section class="inicio">
+        <section id="inicio" class="inicio">
             <h2>Bienvenidos a mi primer web site</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi quo, dolorem odit
                 consequuntur placeat numquam, ducimus provident vitae deserunt, suscipit corrupti expedita adipisci cum
@@ -26,8 +31,7 @@
             <button type="button" class="btn btn-primary">Lorem</button>
         </section>
 
-        <!-- Contenido -->
-        <section class="main-contenido">
+        <section id="contenido" class="main-contenido">
             <h2>Mis habilidades</h2>
             <div class="contenedor-cards">
                 <div class="card" style="width: 18rem;">
@@ -58,8 +62,7 @@
             </div>
         </section>
 
-        <!-- Información -->
-        <div class="container-md">
+        <div id="informacion" class="container-md">
             <h2>Información</h2>
             <form>
                 <div class="mb-3">
@@ -79,10 +82,9 @@
             </form>
         </div>
 
-        <!-- Usamos un div como reemplazo de la etiqueta footer -->
         <div class="footer">
             <p>&copy; 2026 Mi WEB 𖠌 Isaac B.M 𖠌</p>
-            <p>Contacto: isaacbm@gmail.com</p>
+            <p>Contacto: isaacbm@mail.com</p>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
