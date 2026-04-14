@@ -1,0 +1,124 @@
+/* Estilos globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header{
+    background-color: #000;
+}
+/*flex: organizar en fila o columna*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #818181;
+}
+/* Primer version : Separa los contenidos a cada esquina parte superior
+
+    Segunda version : Agrupa al centro los items
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #818181;
+}
+    Tercera version : Separa los items con una distancia uniforme
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #818181;
+}
+
+    Cuarta version : Los items se agrupan en columna
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #818181
+}*/
+
+.logo{
+    background-color: #f82424;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    background-color: rgb(52, 188, 37);
+}
+
+.menu a{
+    background-color: rgb(29, 29, 246);
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main{
+    display: flex;
+    gap: 10px;
+}
+
+.contenedor{
+    display: flex;
+    gap: 10px;
+    flex: 3;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(184, 48, 243);
+}
+
+.flex-top{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card{
+    background-color: orange;
+    flex: 1; /* flex es una propiedad que permite controlar la ocupación de espacio de los items*/
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar{
+    flex: 1;
+    background-color: rgb(9, 235, 235);
+    order: -1; /*Mueve a la izquierda el sidebar*/
+}
+
+/* Grid: Te permite organizar en filas y columnas (tabla)*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* fr: fracción del espacio*/
+    gap: 10px;
+}
+
+.box{
+    background-color: deeppink;
+    padding: 20px;
+    text-align: center;
+}
+
+/* @media es una regla de css que te sirve para aplicar estilos segun el tamaño de pantalla*/
+@media (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
