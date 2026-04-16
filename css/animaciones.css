@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+/*
+nav a{
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+    transition: 0.3s; Tiempo de cambio
+}
+
+nav a:hover{ hover: permite sobreescribir los estilos/efectos agregados
+    color: #fff;
+    background: gray;
+    border-radius: 30px;
+}*/
+
+/* Estilo subrayado*/
+nav a{
+    text-decoration: none;
+    color: darkorange;
+    padding: 5px;
+    position: relative; /* Te ayuda a ubicar respecto a la posicion original*/
+}
+
+nav a::after{
+    content: ""; /* content es un atributo fundamental para trabajar con pseudo-elementos*/
+    position: absolute; /* ubicar correctamente la linea | absolute: posicionar con su padre (relative)*/
+    width: 0; /* ancho de la línea */
+    height: 2px; /* altura (ancho) de la línea*/
+    background: #fff;
+    left: 0; /* Posiciona el origen de la linea hacia la izquierda */
+    bottom: 0; /* Corrige la ubicación, generado hacia abajo*/
+    transition: 0.3s; /* duracion de efecto */
+}
+
+nav a:hover::after{
+    width: 100%; /* Permite a la línea completar todo el ancho de la etiqueta a*/
+}
+
+.logo img{
+    height: 45px;
+    display: block;
+    transition: transform 0,3s ease; /* propiedad que modifica la clase (img) usando un propiedades/animacion (transform), tiempo de transición y por ultimo velocidad de animacion (ease)*/
+}
+
+.logo:hover img{
+    transform: scale(1.4);
+}
+
+.contenedor-img{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.item-img img{
+    width: 150px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.item-img:hover img{
+    transform: translateY(-10px); /*efecto mov en eje Y*/
+    filter: brightness(1.2);
+    /*transform: scale(1.2) rotate(10deg);*/
+}
+
+.titulo {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo h1{
+    color: crimson;
+}
+
+.botton{
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
