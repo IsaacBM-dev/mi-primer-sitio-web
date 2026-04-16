@@ -41,7 +41,7 @@ for(let i = 0; i<5;i++){
 // Funciones
 
 function saludar(){
-    alert("No te olvides del break profe");
+    alert("Hola, este es un ejemplo de ventana emergente con JavaScript");
 }
 
 saludar();
